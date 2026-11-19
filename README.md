@@ -13,7 +13,7 @@ Completing a box gives you the box (A/B appears inside) and an extra turn.
 
 ## Alpine Linux VM: auto-start game with no login
 1. Install tools: `apk add build-base git valgrind gdb`
-2. `git clone <your repo> && cd DotsAndBoxes && make && make install`   (as root)
+2. `git clone https://github.com/aliomarsha/dotsboxes.git && cd dotsboxes && make && make install`   (as root)
 3. Edit `/etc/inittab`, replace the tty1 line with:
 
        tty1::respawn:/sbin/getty -n -l /usr/local/bin/startgame 38400 tty1
